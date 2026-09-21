@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: Say hello
         run: echo "Hello, CI/CD!"
+              - name: Say hello
+        run: echo "Hello, CI/CD!"
+
+      - name: Use a secret
+        run: echo "The secret starts with ${SECRET_VAL:0:5}"
+        env:
+          SECRET_VAL: ${{ secrets.MY_TEST_SECRET }}
