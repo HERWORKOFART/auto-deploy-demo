@@ -1,3 +1,4 @@
+
 name: My First Workflow
 
 on:
@@ -9,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
-        run: echo "Hello, CI/CD!"
-              - name: Say hello
         run: echo "Hello, CI/CD!"
 
       - name: Use a secret
